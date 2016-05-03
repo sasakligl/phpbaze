@@ -22,6 +22,9 @@
             echo('<td>' . $row['id'] . '</td>');
             echo('<td>' . $row['registracija'] . '</td>');
             echo('<td>' . $row['ime'] . '</td>');
+            echo('<td><a href="delete.php?id=' . $row['id'] . '"><img src="delete.png"></a></td>');
+            echo('<td><a href="edit.php?id=' . $row['id'] . '"><img src="edit.png"></a></td>');
+            echo('td><a <img src="delete.png"></a></td>');
             echo('</tr>');
         }
         echo('</table>');

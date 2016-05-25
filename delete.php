@@ -1,20 +1,25 @@
 <?php require('db.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Automobili</title>
+    <title>Filmovi</title>
 </head>
+
 <body>
 <h1>
-    Automobili
+    Filmovi
 </h1>
+
 <p>
     <?php
-    $sql = "DELETE FROM automobili WHERE id=" . $_GET['id'];
+    $sql = "DELETE FROM Naziv WHERE  id=" . $_GET['id'];
     $result = $conn->query($sql);
 
-    header('Location : index.php');
+    header('Location: index.php');
     ?>
+
+
 </p>
 </body>
 </html>

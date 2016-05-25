@@ -1,3 +1,4 @@
+
 <?php require('db.php'); ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,6 @@
     <?php
     $sql ="UPDATE Naziv SET Naziv='" . $_POST['Naziv'] . "', Godina_izdanja='" . $_POST['Godina_izdanja'] . "', Redatelj='" . $_POST['Redatelj'] . "' WHERE id=" . $_POST['id'];
     $result = $conn->query($sql);
-
     header('Location:index.php');
     ?>
 

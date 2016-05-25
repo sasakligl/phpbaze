@@ -16,7 +16,6 @@
     echo ($_GET['id']);
     $sql = "SELECT id, Naziv, Godina_izdanja, Redatelj FROM Naziv WHERE id=" . $_GET['id'];
     $result = $conn->query($sql);
-
     if ($result->num_rows > 0) {
         // output data of each row
         $row = $result->fetch_assoc();
@@ -25,7 +24,6 @@
         die();
     }
     $conn->close();
-
     ?>
 <form action="update.php" method="post">
     Naziv:<br>

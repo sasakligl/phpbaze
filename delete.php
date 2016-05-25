@@ -1,3 +1,4 @@
+
 <?php require('db.php'); ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,6 @@
     <?php
     $sql = "DELETE FROM Naziv WHERE  id=" . $_GET['id'];
     $result = $conn->query($sql);
-
     header('Location: index.php');
     ?>
 
@@ -23,5 +23,4 @@
 </p>
 </body>
 </html>
-
 

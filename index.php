@@ -20,9 +20,8 @@
         // output data of each row
         echo('<table>');
         while($row = $result->fetch_assoc()) {
-
             echo('<tr>');
-            // echo('<td>' . $row['id'] . '</td>');
+            echo('<td>' . $row['id'] . '</td>');
             //echo('<td>' .$i++. '</td>');
             echo('<td>' . $row['Naziv'] . '</td>');
             echo('<td>' . $row['Godina_izdanja'] . '</td>');
@@ -31,13 +30,11 @@
             echo('<td><a href ="edit.php?id='. $row['id'] . '"><img src="edit.png"></a></td>');
             echo('</tr>');
         }
-
         echo('</table>');
     } else {
         echo "Nema filmova";
     }
     $conn->close();
-
     ?>
 
 </p>
